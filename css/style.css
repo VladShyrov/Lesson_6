@@ -1,0 +1,595 @@
+/* Подключение шрифтов */
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:regular,700");
+
+@font-face {
+  font-family: "Acrom";
+  src: url("../fonts/Acrom-Thin.woff2") format("woff2"),
+    url("../fonts/Acrom-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaPT-Light.woff2") format("woff2"),
+    url("../fonts/FuturaPT-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+/* Стили обнуления */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+/* рахмер для картинок */
+img {
+  max-width: 100%;
+}
+/* Граница тела */
+body {
+  width: 1440px;
+  background-color: gray;
+}
+/* Стили для навигации */
+.menu__icon {
+  display: inline-block;
+  text-align: center;
+  margin: 30px 160px 10px 160px;
+  font-family: Futura PT;
+  font-size: 90px;
+  border: 5px dashed red;
+  border-radius: 25px;
+  text-shadow: 3px 5px 2px rgb(40, 4, 245);
+}
+.menu__body {
+  display: inline-block;
+  margin: 0px 0px 20px 160px;
+}
+li {
+  display: inline-block;
+  margin: 0px auto;
+}
+.menu__list a {
+  font-family: Acrom;
+
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow: hidden;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+.paragraph {
+  padding: 60px 0px 0px 15px;
+  margin: 0px 0px 0px 80px;
+  text-align: center;
+  font-family: Acrom;
+  font-size: 35px;
+  width: 700px;
+  color: #ffff00;
+  text-shadow: 3px 5px 2px rgb(40, 4, 245);
+  background-color: teal;
+  border-radius: 35px;
+  border: 5px dashed red;
+  line-height: 35px;
+  height: 300px;
+}
+/* Стили для Заголовка */
+.title {
+  font-family: Futura PT;
+  font-weight: bold;
+  font-size: 40px;
+  width: 350;
+  text-align: center;
+  color: rgb(72, 139, 38);
+  margin: 10px 0px 10px 60px;
+  border: 1px solid rgb(51, 19, 19);
+  background-color: thistle;
+}
+/* Стили для текста */
+.text {
+  display: block;
+  font-weight: bolder;
+  margin: 10px 0px 10px 60px;
+  font-family: Acrom;
+  font-weight: bolder;
+  font-size: 35px;
+  border-right: 5px solid rgba(0, 110, 18, 0.884);
+  border-bottom: 5px solid rgba(255, 127, 7, 0.884);
+}
+/* Стили для картинок */
+.xcimg {
+  margin: 10px 0px 10px 60px;
+  width: 900px;
+  height: 400px;
+  border: solid rgb(51, 19, 19);
+  box-shadow: 0px 50px 0px 30px slateblue;
+}
+.text2 {
+  padding: 10px;
+  margin: 10px 60px 0px 40px;
+  position: absolute;
+  display: inline-block;
+  font-family: Acrom;
+  font-weight: bolder;
+  font-size: 25px;
+  width: 80;
+  height: 800;
+  border: solid rgb(51, 19, 19);
+  background-color: green;
+  color: white;
+}
+.paragraph2 {
+  display: inline-block;
+  padding: 30px 0px 30px 15px;
+  margin: 80px 0px 0px 80px;
+  text-align: center;
+  font-family: Acrom;
+  font-size: 40px;
+  width: 500px;
+  background-color: tomato;
+  color: yellow;
+  border: 5px dashed rgb(151, 195, 212);
+  line-height: 35px;
+  height: 270px;
+}
+.text3 {
+  display: inline-block;
+  padding: 10px;
+  margin: 80px 0px 30px 40px;
+  position: absolute;
+  display: inline-block;
+  font-family: Acrom;
+  font-weight: bolder;
+  font-size: 30px;
+  width: 750px;
+  height: 310px;
+  border: 5px double rgb(51, 19, 19);
+  background-color: indigo;
+  color: white;
+}
+.title_all {
+  font-family: Futura PT;
+  font-weight: bold;
+  font-size: 40px;
+  width: 350;
+  text-align: center;
+  color: rgb(206, 22, 151);
+  margin: 10px 0px 10px 60px;
+  border: 1px solid rgb(51, 19, 19);
+  background-color: rgba(175, 159, 16, 0.637);
+}
+.amimg {
+  margin: 10px 0px 10px 60px;
+  width: 900px;
+  height: 400px;
+  padding: 10px;
+  border: 5px dotted rgb(218, 26, 74);
+  box-shadow: 10px 40px 10px 30px rgb(182, 253, 50);
+}
+.text4 {
+  padding: 10px;
+  margin: 10px 60px 0px 40px;
+  position: absolute;
+  display: inline-block;
+  font-family: Acrom;
+  font-weight: bolder;
+  font-size: 23px;
+  width: 80;
+  height: 640;
+  border: solid rgb(51, 19, 19);
+  background-color: green;
+  color: white;
+}
+.title_fr {
+  font-family: Futura PT;
+  font-weight: bold;
+  font-size: 40px;
+  width: 350;
+  text-align: center;
+  color: rgba(0, 110, 18, 0.884);
+  margin: 70px 0px 10px 60px;
+  border: 1px solid rgb(51, 19, 19);
+  background-color: rgba(219, 18, 28, 0.247);
+}
+.frimg {
+  padding: 10px;
+  margin: 10px 0px 10px 60px;
+  width: 900px;
+  height: 400px;
+  border: 10px solid rgb(218, 26, 202);
+  box-shadow: 10px 40px 10px 30px rgb(184, 182, 170);
+}
+.text5 {
+  padding: 10px;
+  margin: 10px 60px 0px 40px;
+  position: absolute;
+  display: inline-block;
+  font-family: Acrom;
+  font-weight: bolder;
+  font-size: 23px;
+  width: 300px;
+  height: 350px;
+  border: solid rgb(51, 19, 19);
+  background-color: green;
+  color: white;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.title_fb {
+  font-family: Futura PT;
+  font-weight: bold;
+  font-size: 40px;
+  width: 350;
+  text-align: center;
+  color: rgba(0, 16, 110, 0.884);
+  margin: 70px 0px 10px 60px;
+  border: 1px solid rgb(154, 190, 96);
+  background-color: rgba(139, 18, 219, 0.247);
+}
+.fbimg {
+  padding: 10px;
+  margin: 10px 0px 10px 60px;
+  width: 900px;
+  height: 400px;
+  border: 10px solid rgb(87, 218, 26);
+  box-shadow: 10px 40px 10px 30px rgb(245, 102, 6);
+}
+.text6 {
+  padding: 10px;
+  margin: 10px 60px 0px 40px;
+  position: absolute;
+  display: inline-block;
+  font-family: Acrom;
+  font-weight: bolder;
+  font-size: 23px;
+  width: 300px;
+  height: 350px;
+  border: solid rgb(51, 19, 19);
+  background-color: green;
+  color: white;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.title_en {
+  font-family: Futura PT;
+  font-weight: bold;
+  font-size: 40px;
+  width: 350;
+  text-align: center;
+  color: rgb(238, 226, 57);
+  margin: 70px 0px 10px 60px;
+  border: 1px solid rgb(60, 221, 226);
+  background-color: rgba(54, 12, 82, 0.945);
+}
+.enimg {
+  padding: 10px;
+  margin: 10px 0px 10px 60px;
+  width: 900px;
+  height: 400px;
+  border: 10px solid rgb(49, 51, 49);
+  box-shadow: 10px 40px 10px 30px rgba(217, 6, 245, 0.76);
+}
+.text7 {
+  padding: 10px;
+  margin: 10px 60px 0px 40px;
+  position: absolute;
+  display: inline-block;
+  font-family: Acrom;
+  font-weight: bolder;
+  font-size: 23px;
+  width: 300px;
+  height: 350px;
+  border: solid rgb(51, 19, 19);
+  background-color: green;
+  color: white;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.title_dh {
+  font-family: Futura PT;
+  font-weight: bold;
+  font-size: 40px;
+  width: 350;
+  text-align: center;
+  color: rgb(19, 191, 243);
+  margin: 70px 0px 10px 60px;
+  border: 1px solid rgb(190, 226, 60);
+  background-color: rgba(197, 24, 24, 0.945);
+}
+.dhimg {
+  padding: 10px;
+  margin: 10px 0px 10px 60px;
+  width: 900px;
+  height: 400px;
+  border: 10px solid rgb(252, 136, 5);
+  box-shadow: 10px 40px 10px 30px rgba(27, 27, 27, 0.76);
+}
+.text8 {
+  padding: 10px;
+  margin: 10px 60px 0px 40px;
+  position: absolute;
+  display: inline-block;
+  font-family: Acrom;
+  font-weight: bolder;
+  font-size: 23px;
+  width: 300px;
+  height: 350px;
+  border: solid rgb(51, 19, 19);
+  background-color: green;
+  color: white;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.title_ds {
+  font-family: Futura PT;
+  font-weight: bold;
+  font-size: 40px;
+  width: 350;
+  text-align: center;
+  color: rgb(159, 167, 170);
+  margin: 70px 0px 10px 60px;
+  border: 1px solid rgb(190, 226, 60);
+  background-color: rgba(255, 251, 0, 0.945);
+}
+.dsimg {
+  padding: 10px;
+  margin: 10px 0px 10px 60px;
+  width: 900px;
+  height: 400px;
+  border: 10px solid rgb(236, 235, 233);
+  box-shadow: 10px 40px 10px 30px rgb(237, 253, 6);
+}
+.text9 {
+  padding: 10px;
+  margin: 10px 60px 0px 40px;
+  position: absolute;
+  display: inline-block;
+  font-family: Acrom;
+  font-weight: bolder;
+  font-size: 23px;
+  width: 300px;
+  height: 350px;
+  border: solid rgb(51, 19, 19);
+  background-color: green;
+  color: white;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.title_bt {
+  font-family: Futura PT;
+  font-weight: bold;
+  font-size: 40px;
+  width: 350;
+  text-align: center;
+  color: rgb(253, 254, 255);
+  margin: 70px 0px 10px 60px;
+  background: #ff0000;
+  border: 1px solid #000000;
+  box-shadow: inset #ff0000 -150px 0 100px -100px,
+    inset #ff00ff -250px 0 100px -100px, inset #0000ff -350px 0 100px -100px,
+    inset #00ffff -450px 0 100px -100px, inset #00ff00 -550px 0 100px -100px,
+    inset #ffff00 -650px 0 100px -100px;
+}
+.btimg {
+  padding: 10px;
+  margin: 10px 0px 10px 60px;
+  width: 900px;
+  height: 400px;
+  border: 10px solid rgb(236, 235, 233);
+  background: #ff0000;
+  border: 1px solid #000000;
+  box-shadow: 10px 40px 10px 30px rgb(227, 180, 245),
+    inset #ff00ff -250px 0 100px -100px, inset #0000ff -350px 0 100px -100px,
+    inset #00ffff -450px 0 100px -100px, inset #00ff00 -550px 0 100px -100px,
+    inset #ffff00 -650px 0 100px -100px;
+}
+.text10 {
+  padding: 10px;
+  margin: 10px 60px 0px 40px;
+  position: absolute;
+  display: inline-block;
+  font-family: Acrom;
+  font-weight: bolder;
+  font-size: 23px;
+  width: 300px;
+  height: 350px;
+  border: solid rgb(51, 19, 19);
+  background-color: green;
+  color: white;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.title_hmb {
+  font-family: Futura PT;
+  font-weight: bold;
+  font-size: 40px;
+  width: 350;
+  text-align: center;
+  color: rgb(159, 167, 170);
+  margin: 70px 0px 10px 60px;
+  border: 1px solid rgb(255, 255, 254);
+  background-color: rgba(14, 2, 58, 0.945);
+}
+.hmbimg {
+  padding: 10px;
+  margin: 10px 0px 10px 60px;
+  width: 900px;
+  height: 400px;
+  border: 10px solid rgb(236, 235, 233);
+  box-shadow: 10px 40px 10px 30px rgb(15, 1, 54);
+}
+.text11 {
+  padding: 10px;
+  margin: 10px 60px 0px 40px;
+  position: absolute;
+  display: inline-block;
+  font-family: Acrom;
+  font-weight: bolder;
+  font-size: 23px;
+  width: 300px;
+  height: 350px;
+  border: solid rgb(51, 19, 19);
+  background-color: green;
+  color: white;
+  box-sizing: border-box;
+  overflow: auto;
+}
+/* Тренировочный материал */
+.trenning {
+  position: relative;
+  margin: 60px 0px 0px 55px;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  font-family: Acrom;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 90px;
+  vertical-align: bottom;
+  border: solid;
+  box-sizing: border-box;
+  background-color: sienna;
+  box-shadow: -25px 50px 50px 30px rgb(51, 16, 252);
+  color: aqua;
+  align-content: center;
+  overflow: auto;
+}
+.img_cat {
+  display: inline-block;
+  padding: 60px 0px 0px 0px;
+}
+.text_attention {
+  color: #ff0000;
+  font-family: Futura PT;
+  font-weight: bolder;
+  font-size: 40px;
+  border: 2px solid #ffff00;
+}
+.trenning_radius {
+  margin: 80px 0px 0px 55px;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+  vertical-align: bottom;
+  border: solid;
+  border-radius: 100%;
+  box-sizing: border-box;
+  background-color: rgb(44, 223, 21);
+  box-shadow: 5px 0px 100px 50px rgb(251, 255, 0);
+  color: rgb(2, 29, 29);
+  align-content: center;
+  overflow: hidden;
+}
+.freelance {
+  width: 200px;
+  height: 195px;
+}
+.v1 {
+  width: 200px;
+  height: 195px;
+}
+.inst {
+  box-shadow: inset #ff0000 -150px 0 100px -100px,
+    inset #ff00ff -250px 0 100px -100px, inset #0000ff -350px 0 100px -100px,
+    inset #00ffff -450px 0 100px -100px, inset #00ff00 -550px 0 100px -100px,
+    inset #ffff00 -650px 0 100px -100px;
+}
+.youtube {
+  background-color: red;
+}
+.trenning_text {
+  font-family: Acrom;
+  color: #fff;
+  font-weight: 60;
+  text-decoration: line-through #000000;
+}
+.trenning_text1 {
+  text-transform: uppercase;
+  font-family: Futura PT;
+  font-size: 30px;
+  color: #ffff00;
+  text-shadow: 3px 5px 2px rgb(40, 4, 245);
+}
+.block {
+  position: absolute;
+  display: none;
+}
+.trenning:hover .block {
+  display: block;
+}
+/* Стили для кнопки */
+.button {
+  margin: 80px 0px 0px 0px;
+}
+.button_up {
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: Acrom;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  color: #ffffff;
+  background: rgb(41, 43, 44);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.floating-button:hover {
+  background: #2ee59d;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+  color: white;
+  transform: translateY(-7px);
+}
+/* Стили подвала */
+.footer {
+  margin: 60px 0px 80px 60px;
+  font-family: Acrom;
+  font-weight: bolder;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 30px;
+  border: 2px solid #000000;
+  color: #fff;
+  text-shadow: 1px 1px 1px #ff0000;
+  border-radius: 20px;
+}
